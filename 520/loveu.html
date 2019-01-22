@@ -1,4 +1,5 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>给你的一封信</title>	    
         <link type="text/css" rel="stylesheet" href="./file/default.css">
@@ -14,26 +15,68 @@
 	    <style type="text/css">
         </style>
 </head>
-<head>
+<!--
+     <head>
     <meta charset="utf-8" />
-    <title>图片插入html 在线演示 www.divcss5.com</title>
 </head>
 
 <body>
     <p>原始大图片</p>
     <p>
-        <img src="http://dingding520.fun/520/file/ilike.jpg" width="165" height="60" />
+        <img src="http://dingding520.fun/520/file/ilike.jpg" width="300" height="300" />
     </p>
     <p>改小图片</p>
     <p>
-        <img src="./file/beauty.jpg" width="105" height="30" />
+        <img src="./file/beauty.jpg" width="300" height="300" />
     </p>
     <p>改大图片</p>
     <p>
-        <img src="http://dingding520.fun/520/file/together.jpg" width="365" height="120" />
+        <img src="http://dingding520.fun/520/file/together.jpg" width=300 height="300" />
     </p>
 </body> 
+-->
+<!--
+<head>
 
+    <title>图片位置设置</title>
+
+    <style type="text/css">
+        body {
+            background-size:auto 200px;
+            background-image: url("./file/ilike.jpg");
+            background-attachment: scorll;
+            background-repeat: no-repeat;
+            background-position: top left;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+</body>
+    -->
+<body>
+    <SCRIPT LANGUAGE="JavaScript">
+        function reP(){
+        document.getElementById('2').style.display = 'none';
+        document.getElementById('oImg').style.display = "block";
+        }
+    </SCRIPT>
+    <img src='beauty.jpg' id="oImg" style='display:none' width="300px" hight="300px" />
+    <INPUT TYPE="button" value='在一起(*^▽^*)' onclick="reP()" />
+</body>  
+<body>
+    <SCRIPT LANGUAGE="JavaScript">
+        function reP2(){
+        document.getElementById('oImg').style.display = 'none';
+        document.getElementById('2').style.display = "block";
+        }
+    </SCRIPT>
+    <img src="ilike.jpg" id="2" style='display:none' width="300px" hight="300px" />
+    <INPUT TYPE="button" value='你看(⊙▽⊙)' onclick="reP2()" />
+</body> 
 
     <body>
         <div id="main">
